@@ -8,12 +8,12 @@ manager = Manager()
 @manager.command
 def  xxx:
     xxxx
-
+    
 1.如果在主'manage.py'文件中 那么终端中  'python manage.py command_name'
 2.如果把一些命令集中与另一个文件中，那么需要在终端输入命令时，在command_name前面加上一个父命令 ‘python manage.py db command_name’
 ```
 
-## Code:
+### Code:
 
 ```text
 app.py:
@@ -36,7 +36,7 @@ if __name__ == '__main__':
 
 ```text
 manage.py:
-
+ 
 
 #encoding:utf-8
 
@@ -72,5 +72,6 @@ def init ():
 @DB_manager.command
 def migrate():
     print('数据库迁移')
+
 ```
 

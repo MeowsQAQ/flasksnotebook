@@ -1,6 +1,6 @@
 # 08day before\_request+get post
 
-## Code:
+### Code:
 
 ```text
 app.py:
@@ -39,8 +39,8 @@ if __name__ == '__main__':
 
 ```text
 login.html:
-
-
+ 
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>

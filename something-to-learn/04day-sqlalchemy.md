@@ -1,13 +1,11 @@
 # 04day Sqlalchemy
 
-## **Sqlalchemy连接Mysql**
+### **Sqlalchemy连接Mysql**
 
 ```text
 连接数据库
 SQLALCHEMY_DATABASE_URIdialect+driver://username:password@host :port
 ```
-
-\*\*\*\*
 
 ```text
    app.py:
@@ -51,7 +49,7 @@ DATABASE='db_demo1'
 SQLALCHEMY_DATABASE_URI="{}+{}://{}:{}@{}:{}/{}?charset =utf8".format(DIALECT,DRIVER,USERNAME,PASSWORD,HOST,PORT,DATABASE)
 ```
 
-## **Sqlalchemy模型与表单映射：**
+### **Sqlalchemy模型与表单映射：**
 
 1.Mysql中代码：
 

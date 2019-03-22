@@ -1,6 +1,6 @@
 # 09day decorator
 
-## Code:
+### Code:
 
 ```text
 def my_log(func):

@@ -1,2 +1,0 @@
-# 06day Flask-migrate
-

@@ -12,7 +12,7 @@ def index():
     def user(username): 
     return "Hello {}".format(username)
 if name == 'main': 
-    app.run()
+    app.run() 
 ```
 
 然后手动的去更改一下网址，如下。看上去还不错。
@@ -24,7 +24,7 @@ app = Flask\(**name**\)
 ```text
 @app.route('/') 
 def index(): 
-    return 'Hello World!'
+    return 'Hello World!' 
 ```
 
 简单说一下这个部分代码，app = Flask\(**name**\)，用来创建一个Flask应用，一般Flask类构造函数只有一个必须指定的参数，即程序主模块或包的名字，在大多数程序中，Python的**name\_**变量就是所需要的值。 @app.route\('/'\) 这个东西叫路由，程序实例需要知道对每个URL\(网址\)请求运用那些代码，所以保存了一个URL到Python函数的映射关系。处理URL和函数之间的关系的程序称为路由。而下面所修饰的index\(\)函数被叫做视图函数，他来展示你的web页面的样子。
@@ -135,12 +135,13 @@ if __name__ == '__main__':
     #监听内容listen()
     #debug模式
     app.run(Debug=True)
+  
 ```
 
 ```text
   index.html:
-
-
+  
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,12 +1,12 @@
 # 02day-extends\_block
 
-**继承和block：**
+**继承和block：** 
 
-1.继承语法： ｛% extends 'base.html' %｝
+1.继承语法： ｛% extends 'base.html' %｝ 
 
 2.block 语法:子模板和父模板的block xxx要一致
 
-## **Code:**
+#### **Code:**
 
 ```text
 from flask import Flask,render_template
@@ -43,6 +43,7 @@ index.html:
 {% block main %}
 <h1>这是首页</h1>
 {% endblock %}
+
 ```
 
 ```text
