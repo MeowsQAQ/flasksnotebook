@@ -1,6 +1,6 @@
 # 02day-extends\_block
 
-### [ToCatalog](../)
+### [ToCatalog](../README.md)
 
 **继承和block：** 
 
