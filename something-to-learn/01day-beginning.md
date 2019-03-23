@@ -176,8 +176,8 @@ if __name__ == '__main__':
 
 {#    For语句#}
     {% for k,v in user.items() %}
-        <p> {{ k }}:{{ v }}</p>
-    {% endfor %}
+         <!--<p> {{ k }}:{{ v }}</p>-->
+    {% endfor %} 
 
 </body>
 </html>
