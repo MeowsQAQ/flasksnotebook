@@ -28,7 +28,7 @@ if __name__ == '__main__':
 
 {% code-tabs %}
 {% code-tabs-item title="base.html" %}
-```text
+```markup
 
 <!DOCTYPE html>
 <html lang="en">
@@ -119,7 +119,7 @@ if __name__ == '__main__':
 
 {% code-tabs %}
 {% code-tabs-item title="base.css" %}
-```text
+```css
 .logo{
     width: 50px;
     height: 25px;
@@ -159,7 +159,7 @@ def index():
 
 {% code-tabs %}
 {% code-tabs-item title="index.html:" %}
-```text
+```markup
 {% extends 'base.html' %}
 
 {% block title %}首页{% endblock %}
@@ -193,7 +193,7 @@ def index():
 
 {% code-tabs %}
 {% code-tabs-item title="index.css:" %}
-```text
+```css
 ul{
     list-style: none;
     padding-left: 0;
@@ -264,9 +264,9 @@ def regist():
                 return redirect(url_for('login'))
 ```
 
-```text
-regist.html:
-
+{% code-tabs %}
+{% code-tabs-item title="regist.html" %}
+```markup
 {% endblock %}
 
 {% block head %}
@@ -297,6 +297,8 @@ regist.html:
     </form>
 {% endblock %}
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 #### 登陆方法：
 
@@ -324,7 +326,7 @@ def login():
 
 {% code-tabs %}
 {% code-tabs-item title="login.html" %}
-```text
+```markup
 {% extends 'base.html' %}
 {% block title %}登录{% endblock %}
 
@@ -352,8 +354,9 @@ def login():
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-```text
-login_regist.html：
+{% code-tabs %}
+{% code-tabs-item title="login\_regist.css" %}
+```css
 # 同时导入login.html和regist.html
 
 .formcontainer{
@@ -364,6 +367,8 @@ login_regist.html：
     text-align: center;
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 #### 登陆后注销方法：
 
@@ -397,8 +402,6 @@ def my_context_processor():
 发布问答时需要判断用户当前是否登陆，如果未登录需要转到`login`页面，这里通过修饰器来实现，新建`decorators.py`文件，写一个判断登陆的装饰器。通过判断后需要使用`POST`方法获取表单信息，然后`session.add()`和`session.commit()`实现数据库更新
 
 ```text
-decorators.py:
-
 from flask import session,redirect,url_for
 from functools import wraps
 
@@ -433,7 +436,7 @@ def question():
 
 {% code-tabs %}
 {% code-tabs-item title="question.html" %}
-```text
+```markup
 {% extends 'base.html' %}
 {% block title %}发布问答
 {% endblock %}
@@ -463,15 +466,17 @@ def question():
 {% endcode-tabs-item %}
 {% endcode-tabs %}
 
-```text
-question.css:
-
+{% code-tabs %}
+{% code-tabs-item title="question.css" %}
+```css
 .form-container{
     width: 500px;
     margin: 0 auto;
     text-align: right;
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 #### 问答详情方法：
 
@@ -490,7 +495,7 @@ def detail(question_id):
 
 {% code-tabs %}
 {% code-tabs-item title="detail.html" %}
-```text
+```markup
 {% extends 'base.html' %}
 
 {% block title %}
@@ -543,7 +548,7 @@ def detail(question_id):
 
 {% code-tabs %}
 {% code-tabs-item title="detail.css" %}
-```text
+```css
 .question-info{
     text-align: center;
     margin-top: 20px;
