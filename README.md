@@ -1,6 +1,6 @@
 # Catalog
 
-#### [Just Chong！](./)
+#### [Just Chong！](../README.md)
 
 ## Something to learn
 
