@@ -26,8 +26,9 @@ if __name__ == '__main__':
 
 ![&#x6A21;&#x677F;&#x6837;&#x5F0F;](../.gitbook/assets/image%20%284%29.png)
 
+{% code-tabs %}
+{% code-tabs-item title="base.html" %}
 ```text
-base.html:
 
 <!DOCTYPE html>
 <html lang="en">
@@ -113,10 +114,12 @@ base.html:
 </body>
 </html>
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="base.css" %}
 ```text
-base.css:
-
 .logo{
     width: 50px;
     height: 25px;
@@ -136,6 +139,8 @@ body{
     text-align: center;
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 #### 主页方法：
 
@@ -152,9 +157,9 @@ def index():
 
 继承base.html，在`block main`中for循环遍历`questions`，将其全部展示
 
+{% code-tabs %}
+{% code-tabs-item title="index.html:" %}
 ```text
-index.html:
-
 {% extends 'base.html' %}
 
 {% block title %}首页{% endblock %}
@@ -183,10 +188,12 @@ index.html:
     </ul>
 {% endblock %}
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="index.css:" %}
 ```text
-index.css:
-
 ul{
     list-style: none;
     padding-left: 0;
@@ -221,6 +228,8 @@ ul.question-list-group li{
     margin-right: 20px;
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 #### 注册方法：
 
@@ -313,9 +322,9 @@ def login():
             return '手机号码或者密码错误，请重新输入'
 ```
 
+{% code-tabs %}
+{% code-tabs-item title="login.html" %}
 ```text
-login.html:
-
 {% extends 'base.html' %}
 {% block title %}登录{% endblock %}
 
@@ -340,6 +349,8 @@ login.html:
     </form>
 {% endblock %}
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ```text
 login_regist.html：
@@ -417,12 +428,12 @@ def question():
         question.author = g.user
         db.session.add(question)
         db.session.commit()
-        return redirect(url_for('index'))
+        return redirect(url_for('index')
 ```
 
+{% code-tabs %}
+{% code-tabs-item title="question.html" %}
 ```text
-question.html:
-
 {% extends 'base.html' %}
 {% block title %}发布问答
 {% endblock %}
@@ -449,6 +460,8 @@ question.html:
     </form>
 {% endblock %}
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 ```text
 question.css:
@@ -475,10 +488,9 @@ def detail(question_id):
 
 需要在detail.html中写入问答评论模块，Line 23之后
 
+{% code-tabs %}
+{% code-tabs-item title="detail.html" %}
 ```text
-detail.html:
-
-
 {% extends 'base.html' %}
 
 {% block title %}
@@ -526,10 +538,12 @@ detail.html:
 
 {% endblock %}
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
+{% code-tabs %}
+{% code-tabs-item title="detail.css" %}
 ```text
-detail.css:
-
 .question-info{
     text-align: center;
     margin-top: 20px;
@@ -562,6 +576,8 @@ detail.css:
     margin-left: 60px;
 }
 ```
+{% endcode-tabs-item %}
+{% endcode-tabs %}
 
 #### 评论方法：
 
