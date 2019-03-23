@@ -162,18 +162,6 @@ def question():
         return redirect(url_for('index')
 ```
 
-{% code-tabs %}
-{% code-tabs-item title="question.css" %}
-```css
-.form-container{
-    width: 500px;
-    margin: 0 auto;
-    text-align: right;
-}
-```
-{% endcode-tabs-item %}
-{% endcode-tabs %}
-
 #### 问答详情方法：
 
 ![&#x95EE;&#x7B54;&#x8BE6;&#x60C5;\(&#x5305;&#x62EC;&#x8BC4;&#x8BBA;\)](../.gitbook/assets/image%20%283%29.png)
