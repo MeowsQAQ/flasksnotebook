@@ -1,6 +1,6 @@
 # 01day beginning
 
-### [ToCatalog](../)
+### [ToCatalog](../README.md)
 
 代码如下:
 
