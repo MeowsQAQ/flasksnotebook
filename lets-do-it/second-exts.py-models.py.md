@@ -103,3 +103,7 @@ class Answer(db.Model):
     author = db.relationship('User', backref=db.backref('answers'))
 ```
 
+#### Mysql数据：
+
+![mysql&#x4E2D;&#x6570;&#x636E;](../.gitbook/assets/image%20%286%29.png)
+
