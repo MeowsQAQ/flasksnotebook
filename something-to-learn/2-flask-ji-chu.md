@@ -1,6 +1,6 @@
 # 2 Flask基础
 
-### [ToCatalog](../)
+### [ToCatalog](../README.md)
 
 ## 安装Python2.7：
 
