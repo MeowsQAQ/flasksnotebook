@@ -1,7 +1,5 @@
 # 09day decorator
 
-### [ToCatalog](../)
-
 ### Code:
 
 ```text

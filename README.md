@@ -1,8 +1,8 @@
 # Catalog
 
-#### [Just Chong！](README.md)
-
 ## Something to learn
+
+#### [Just Chong！](./)
 
 * [1. Web基础相关](something-to-learn/1.-web-ji-chu-xiang-guan.md)
 * [2.Flask基础](something-to-learn/2-flask-ji-chu.md)

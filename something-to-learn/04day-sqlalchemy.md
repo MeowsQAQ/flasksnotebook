@@ -1,7 +1,5 @@
 # 04day Sqlalchemy
 
-### [ToCatalog](../)
-
 ### **Sqlalchemy连接Mysql**
 
 ```text

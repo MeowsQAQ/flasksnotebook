@@ -1,7 +1,5 @@
 # 01day beginning
 
-### [ToCatalog](../README.md)
-
 代码如下:
 
 ```text
@@ -140,5 +138,46 @@ if __name__ == '__main__':
   
 ```
 
-![index.html](../.gitbook/assets/image%20%287%29.png)
+```text
+  index.html:
+  
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#    这是HTML文件中出现的文字#}
+{#    <p>username：{{ username }}</p>#}
+{#    <p>gender：{{ gender }}</p>#}
+{#    <p>age：{{ age }}</p>#}
+{##}
+{#    <hr>#}
+{#    <p>name:{{ person.name  }}</p>#}
+{#    <p>age:{{ person.age }}</p>#}
+{##}
+{#    <hr>#}
+{#    <p>baidu:{{ websites.baidu }}</p>#}
+{#    <p>google:{{ websites.google }}</p>#}
+{#   if语句#}
+{#    {% if user %}#}
+{#        <a href="#">{{ user.username }}</a>#}
+{#        <a href="#">注销</a>#}
+{#    {% else% %}#}
+{#        <a href = "#">登陆</a>#}
+{#        <a href = "#">注册</a>#}
+{##}
+{#    {% endif %}#}
+
+
+{#    For语句#}
+    {% for k,v in user.items() %}
+        <p> {{ k }}:{{ v }}</p>
+    {% endfor %}
+
+</body>
+</html>
+```
 

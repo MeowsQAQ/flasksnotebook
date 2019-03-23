@@ -1,7 +1,5 @@
 # Third-manage.py/config.py
 
-### [ToCatalog](../)
-
 将数据库连接的基本信息加入到config.py中，sqlalchemy连接数据可格式为：
 
 ```text

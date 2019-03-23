@@ -1,7 +1,5 @@
 # 08day before\_request+get post
 
-### [ToCatalog](../)
-
 ### Code:
 
 ```text
